@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '..', '.env'))
 
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-MODEL = "gemini-1.5-flash"
+MODEL = "gemini-2.0-flash"
 
 SYSTEM_PROMPT = """You are MedBuddy, a medical document simplifier. Read prescriptions and discharge summaries and extract information EXACTLY as written by the doctor.
 
